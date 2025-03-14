@@ -1,0 +1,89 @@
+package com.fisiocare.miau
+
+import androidx.collection.emptyLongSet
+import kotlin.math.sqrt
+import kotlin.math.pow
+fun main(){
+    vacuna()
+}
+
+/*
+FUNCION GENEROS MUSICALES
+fun generos_musicales(){
+    println("Ingresa tu genero de musica favorito:")
+    val genero = readlnOrNull()?.toString()
+
+    //condiciones
+    when (genero) {
+        "rock" -> println("eres rockero!")
+        "vallenato" -> println("eres vallenatero")
+        else
+            -> println("no tienes un genero favorito")
+    }
+}
+*/
+
+//RETOS--------------------------------------------------------------
+fun horno(){
+    println("abue ingresa el valor de tu horno en grados Fahrenheit:")
+    val grados = readlnOrNull()?.toDoubleOrNull()?: 0.0
+
+    val celcius = (grados - 32) / 1.8
+    println("Tu temperatura en grados celsius es de $celcius")
+}
+
+fun vacuna(){
+    print("Hola, por favor indicanos el peso del bebe:")
+    val peso = readlnOrNull()?.toDoubleOrNull()?: 0.0
+
+    print("Por favor indicnos cuantos meses tiene tu bebe:")
+    val meses = readlnOrNull()?.toIntOrNull()?: 0
+
+    val dosisvacuna = ((peso + 10) / (meses * 10)) * 8
+    println("la dosis que debes aplicarle a tu bebe es de $dosisvacuna")
+}
+
+fun calculadora(){
+    print("Escribe un numero:")
+    val numero1 = readlnOrNull()?.toIntOrNull()?:0
+    print("Escribe otro numero:")
+    val numero2 = readlnOrNull()?.toIntOrNull()?:0
+
+    print("Que quieres calcular?:")
+    val calcular = readlnOrNull()?.trim().lowercase()
+
+    if (calcular == "suma"){
+        val suma = numero1 + numero2
+        println("el valor de la suma es $suma")
+    }else if(calcular == "resta"){
+        print("Si quieres calcular $numero1 - $numero2, escribe opcion1:")
+        val opcion = readlnOrNull()?.trim().lowercase()
+        if (opcion == "opcion1"){
+            val resta1 = numero1 - numero2
+            println("el valor de la resta es $resta1")
+        }else{
+            val resta2 = - numero1 + numero2
+            println("el valor de la resta es $resta2")
+        }
+    }else if (calcular == "multiplicacion"){
+        val multiplacion = numero1 * numero2
+        println("el valor de la multiplicacion es $multiplacion")
+    }else if (calcular == "division"){
+        println("Si quieres calcular $numero1 / $numero2, escribe opcion1")
+    }
+
+
+
+
+
+
+
+    val division = numero1  / numero2
+    val raiz_cuadrada1 = sqrt(numero2)
+    val raiz_cuadrada2 = sqrt(numero1)
+    val exponente = 3.0
+    val potencia1 = numero1.pow(exponente)
+    val potencia2 = numero1.pow(exponente)
+
+}
+//--------------------------------------------------------------------
