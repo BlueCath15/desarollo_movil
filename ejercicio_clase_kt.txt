@@ -1,5 +1,6 @@
 package com.fisiocare.miau
 
+
 import androidx.collection.emptyLongSet
 import kotlin.math.sqrt
 import kotlin.math.pow
@@ -7,21 +8,7 @@ fun main(){
     vacuna()
 }
 
-/*
-FUNCION GENEROS MUSICALES
-fun generos_musicales(){
-    println("Ingresa tu genero de musica favorito:")
-    val genero = readlnOrNull()?.toString()
 
-    //condiciones
-    when (genero) {
-        "rock" -> println("eres rockero!")
-        "vallenato" -> println("eres vallenatero")
-        else
-            -> println("no tienes un genero favorito")
-    }
-}
-*/
 
 //RETOS--------------------------------------------------------------
 fun horno(){
@@ -86,4 +73,6 @@ fun calculadora(){
     val potencia2 = numero1.pow(exponente)
 
 }
+
 //--------------------------------------------------------------------
+
